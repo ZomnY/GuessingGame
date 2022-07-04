@@ -3,7 +3,7 @@ import random
 def set_range ():
     """ 
     This function queries the user to enter the upper bound for the guessing game.
-    The entry has to be greater than 0 and an integer.
+    The entry has to be greater than 1 and an integer.
     """
 
     range = 0
@@ -13,7 +13,7 @@ def set_range ():
         except ValueError:
             range = 0
             
-        if range < 1:
+        if range <= 1:
             print("Entry error! Again.")
             range = 0
     return range
